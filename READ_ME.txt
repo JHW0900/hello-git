@@ -15,5 +15,9 @@ git log --stat            # 해당 커밋에 어떤 파일이 관련되었는 �
 
 git checkout -- filename  # 해당 파일을 수정 전 상태로 되돌림
 
-git reset HEAD filename   # 해당 파일을 스테이지에서 내림
-git reset HEAD^           # 최근에 커밋된 파일을 취소하고 스테이지에서 내림
+git reset HEAD filename         # 해당 파일을 스테이지에서 내림
+git reset HEAD^                 # 최근에 커밋된 파일을 취소하고 스테이지에서 내림
+git reset HEAD~n                # 최근 n개의 커밋을 취소
+git reset --hard {커밋 해시}     # 해당 커밋이 가장 최신 커밋으로 됨
+
+git revert {커밋 해시}           # 해당 커밋을 보류 시킴 / 보류 시킨 것이 커밋 됨
