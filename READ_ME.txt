@@ -17,3 +17,4 @@ git checkout -- filename  # 해당 파일을 수정 전 상태로 되돌림
 
 git reset HEAD filename   # 해당 파일을 스테이지에서 내림
 git reset HEAD^           # 최근에 커밋된 파일을 취소하고 스테이지에서 내림
+git reset HEAD~n          # 최근 n개의 커밋을 취소
